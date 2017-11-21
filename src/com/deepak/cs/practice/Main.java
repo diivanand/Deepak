@@ -10,6 +10,7 @@ public class Main {
 
         for (PracticeTest practiceTest : practiceTests) {
             System.out.println("Printing: " + practiceTest.getClass().getSimpleName());
+            System.out.println();
 
             for (Question question : practiceTest.getAllQuestions()) {
                 System.out.println("Printing: " + question.getClass().getSimpleName());
@@ -23,6 +24,7 @@ public class Main {
                             } catch (Exception ex) {
                                 System.out.println(ex.toString());
                             }
+                            System.out.println();
                         }
                     } else {
                         question.execute();
